@@ -1,0 +1,21 @@
+{
+  "name": "Test Documentation",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "Test Documentation",
+  "main": "index.js",
+  "authors": {
+    "name": "Matthias Schneider",
+    "email": "matthias.schneider@ipa.fraunhofer.de"
+  },
+  "repository": "https://github.com/ma-sch/vuepress-test",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "vuepress": "^1.9.7"
+  },
+  "dependencies": {}
+}
