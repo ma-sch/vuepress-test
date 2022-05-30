@@ -43,7 +43,7 @@ export default {
       });
       this.options.unshift({value: 'main', text: 'main'});
       const path = window.location.pathname.toLowerCase();
-      if (path.startsWith('/notifybc/version/')) {
+      if (path.startsWith('/vuepress-test/version/')) {
         const start = 18;
         const end = path.indexOf('/', start);
         this.selected = path.substring(start, end);
@@ -55,16 +55,16 @@ export default {
   methods: {
     onChange(event) {
       const targetVersionPath =
-        this.selected === 'main' ? '' : `/version/${this.selected}`;
+        this.selected === 'main' ? '' : `version/${this.selected}`;
       const path = window.location.pathname.toLowerCase();
       let startIdx = 9;
       const versionIdx = path.indexOf('/version/');
       if (versionIdx >= 0) {
         startIdx = versionIdx + 9;
       }
-      const endIdx = path.indexOf('/', startIdx);
+      const endIdx = path.indexOf('/', startIdx);      
       window.location.pathname =
-        window.location.pathname.substring(0, 9) +
+        window.location.pathname +
         targetVersionPath +
         window.location.pathname.substring(endIdx);
     },
