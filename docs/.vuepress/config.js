@@ -1,7 +1,7 @@
 module.exports = {
     title: 'TestDocu',
     description: 'Test Documentation',
-    base: `/${process.env.VERSION_PATH || '/'}`,
+    base: `/vuepress-test${process.env.VERSION_PATH || '/'}`,
 	themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
