@@ -1,7 +1,8 @@
 module.exports = {
     title: 'TestDocu',
     description: 'Test Documentation',
-    themeConfig: {
+    base: `/${process.env.VERSION_PATH || '/'}`,
+	themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Guide', link: '/guide/' },
